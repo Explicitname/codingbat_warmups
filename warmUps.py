@@ -31,7 +31,16 @@ def diff21(n):
             return difference
         
 def parrot_trouble(talking, hour):
-    if (talking == False) and (hour in range(7,20)):
-        return False
-    else:
+    if (talking == True) and (hour < 7 or hour > 20):
         return True
+    else:
+        return False
+    
+def makes10(a, b):
+    if (a + b == 10) or (a == 10 or b == 10):
+        return True
+    else:
+        return False
+    
+#def near_hundred(n):
+    
