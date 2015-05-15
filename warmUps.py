@@ -42,5 +42,48 @@ def makes10(a, b):
     else:
         return False
     
-#def near_hundred(n):
+def near_hundred(n):
+    if n in range(90,111) or n in range(190, 211):
+        return True
+    else:
+        return False
+        
+def pos_neg(a, b, negative):
+    if (negative == True) and (a < 0 and b < 0):
+        return True
+    elif (negative == True) and (a > 0 or b > 0):
+        return False
+    elif (a < 0 and b > 0) or (a > 0 and b < 0):
+        return True
+    else:
+        return False
+    
+def not_string(str):
+    if len(str) >= 3 and ((str[0] == 'n') and (str[1] == 'o') and (str[2] == 't')):
+        return str
+    else:
+        return "not " + str
+    
+#def missing_char(str, n):
+    
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
