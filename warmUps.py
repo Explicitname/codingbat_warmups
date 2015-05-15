@@ -64,10 +64,24 @@ def not_string(str):
     else:
         return "not " + str
     
-#def missing_char(str, n):
+def missing_char(str, n):
+    if len(str) >= 0:
+        newStr = str.replace(str[n], '')
+        return newStr
     
+def front_back(str):
+    if len(str) <= 1:
+        return str
+    else:
+        length = len(str) - 1
+        return str[-1] + str[1:(length)] + str[0]
+    
+def front3(str):
+    if len(str) <= 3:
+        return str * 3
+    else:
+        return (str[0] + str[1] + str[2]) * 3
         
-    
     
     
     
